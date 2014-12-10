@@ -95,7 +95,7 @@ class CatmullRomSpline:
         #Prepare for picking events
         for i,p in self.__controlPoints.iteritems():    
             centerX, centerY = p[0], p[1] 
-            circle = plt.Circle((centerX,centerY), self.__handleRadius,fc=np.random.random(3),picker=True, alpha=0.5)   
+            circle = plt.Circle((centerX,centerY), self.__handleRadius,fc=np.random.random(3),picker=True, alpha=0.5)
             self.__controlPointsCircles[i]=circle             
             figure.gca().add_patch(circle)
             #Prepare for picking events
@@ -162,7 +162,6 @@ def button_press_event(event):
 def button_release_event(event):
     global index
     index = None
-    pass
 
 figure.canvas.mpl_connect('pick_event', on_pick)
 figure.canvas.mpl_connect('motion_notify_event', motion_notify_event)
