@@ -170,7 +170,7 @@ figure.canvas.mpl_connect('button_release_event', button_release_event)
 
 
 #Disable default keys on the plot e.g. 'k' is logaritmic scale
-figure.canvas.mpl_disconnect(figure.canvas.manager.key_press_handler_id)
+"""figure.canvas.mpl_disconnect(figure.canvas.manager.key_press_handler_id)"""
 
 #Display the figures on screen
 
